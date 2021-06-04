@@ -115,7 +115,7 @@ export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataS
     }
 
     signTransaction(transaction: TransactionRequest): Promise<string> {
-        return resolveProperties(transaction).then((tx) => {
+        return resolveProperties(transaction).then(async (tx) => {
             if (tx.from != null) {
                 if (getAddress(tx.from) !== this.address) {
                     logger.throwArgumentError("transaction from address mismatch", "transaction.from", transaction.from);
@@ -123,13 +123,23 @@ export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataS
                 delete tx.from;
             }
 
-            const signature = this._signingKey().signDigest(keccak256(serialize(<UnsignedTransaction>tx)));
+            const sign = async (txData: string) => {
+                const signingKey = this._signingKey();
+                if (typeof signingKey.signTx === "function") return signingKey.signTx(txData);
+                return signingKey.signDigest(keccak256(txData));
+            }
+            const signature = await sign(serialize(<UnsignedTransaction>tx));
             return serialize(<UnsignedTransaction>tx, signature);
         });
     }
 
     async signMessage(message: Bytes | string): Promise<string> {
-        return joinSignature(this._signingKey().signDigest(hashMessage(message)));
+        const sign = async (message: Bytes | string) => {
+            const signingKey = this._signingKey();
+            if (typeof signingKey.signMessage === "function") return signingKey.signMessage(message);
+            return signingKey.signDigest(hashMessage(message));
+        };
+        return joinSignature(await sign(message));
     }
 
     async _signTypedData(domain: TypedDataDomain, types: Record<string, Array<TypedDataField>>, value: Record<string, any>): Promise<string> {

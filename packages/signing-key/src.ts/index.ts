@@ -62,6 +62,9 @@ export class SigningKey {
         })
     }
 
+    signTx?(txData: BytesLike): Signature;
+    signMessage?(messageData: BytesLike | string): Signature;
+
     computeSharedSecret(otherKey: BytesLike): string {
         const keyPair = getCurve().keyFromPrivate(arrayify(this.privateKey));
         const otherKeyPair = getCurve().keyFromPublic(arrayify(computePublicKey(otherKey)));
