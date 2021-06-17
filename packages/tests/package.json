@@ -1,10 +1,10 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-cli": "^5.3.0",
-    "@shapeshiftoss/ethers-testcases": "^5.3.0",
+    "@shapeshiftoss/ethers-cli": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-testcases": "^5.3.0-shapeshift.0",
     "@types/mocha": "^5.2.0",
-    "@shapeshiftoss/ethers": "^5.3.0"
+    "@shapeshiftoss/ethers": "^5.3.0-shapeshift.0"
   },
   "description": "Testing package for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -39,5 +39,5 @@
   },
   "tarballHash": "0x7731e9053e030d461cceebdb29e8c39b04e217a952d589b3b8aebc3246737244",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

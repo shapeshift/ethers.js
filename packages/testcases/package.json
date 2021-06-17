@@ -16,11 +16,11 @@
     "./lib/disk-utils": "./lib/browser-disk-utils.js"
   },
   "dependencies": {
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-keccak256": "^5.3.0",
-    "@shapeshiftoss/ethers-strings": "^5.3.0",
-    "@shapeshiftoss/ethers": "^5.3.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-keccak256": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers": "^5.3.0-shapeshift.0",
     "tiny-inflate": "1.0.3"
   },
   "description": "Testcases for Ethereum and scripts to generate testcases.",
@@ -56,5 +56,5 @@
   },
   "tarballHash": "0xb26ac75638cb91d10cff73dd3fbf2b47aa921ae2a2948165379773ec3c030f43",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

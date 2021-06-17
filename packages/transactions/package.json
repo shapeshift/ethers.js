@@ -1,15 +1,15 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-address": "^5.3.0",
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-constants": "^5.3.0",
-    "@shapeshiftoss/ethers-keccak256": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0",
-    "@shapeshiftoss/ethers-rlp": "^5.3.0",
-    "@shapeshiftoss/ethers-signing-key": "^5.3.0"
+    "@shapeshiftoss/ethers-address": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-constants": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-keccak256": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-rlp": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-signing-key": "^5.3.0-shapeshift.0"
   },
   "description": "Utilities for decoding and encoding Ethereum transaction for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -45,5 +45,5 @@
   "sideEffects": false,
   "tarballHash": "0x2c70f8a6fb066417cc37231d2270d8f1ec986d91ef08fa26b064a7480a3dbbe1",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

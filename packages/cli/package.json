@@ -9,9 +9,9 @@
   "dependencies": {
     "@babel/parser": "7.8.4",
     "@babel/types": "7.8.3",
-    "@shapeshiftoss/ethers-asm": "^5.3.0",
-    "@shapeshiftoss/ethers-basex": "^5.3.0",
-    "@shapeshiftoss/ethers": "^5.3.0",
+    "@shapeshiftoss/ethers-asm": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-basex": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers": "^5.3.0-shapeshift.0",
     "scrypt-js": "3.0.1",
     "solc": "0.7.1"
   },
@@ -50,5 +50,5 @@
   "sideEffects": false,
   "tarballHash": "0x9568fea6f6bc2419b0245ddb1d628e2279e3f234cd1b13801b6818d50da53723",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

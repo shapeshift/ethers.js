@@ -1,11 +1,11 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-abstract-provider": "^5.3.0",
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0"
+    "@shapeshiftoss/ethers-abstract-provider": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0"
   },
   "description": "An Abstract Class for desribing an Ethereum Signer for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -41,5 +41,5 @@
   "sideEffects": false,
   "tarballHash": "0x2123b325684a93493b8ba0e346cd2e9c4bc8aa2137c217ab428e6069b86d8885",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

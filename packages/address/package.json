@@ -1,11 +1,11 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-keccak256": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-rlp": "^5.3.0"
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-keccak256": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-rlp": "^5.3.0-shapeshift.0"
   },
   "description": "Utilities for handling Ethereum Addresses for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -41,5 +41,5 @@
   "sideEffects": false,
   "tarballHash": "0xa82e0a824c8508389be5bde68ac614fa98c1c867708e80c406b050ea75d12ad3",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

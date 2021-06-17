@@ -1,16 +1,16 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-abi": "^5.3.0",
-    "@shapeshiftoss/ethers-abstract-provider": "^5.3.0",
-    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0",
-    "@shapeshiftoss/ethers-address": "^5.3.0",
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-constants": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0",
-    "@shapeshiftoss/ethers-transactions": "^5.3.0"
+    "@shapeshiftoss/ethers-abi": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-abstract-provider": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-address": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-constants": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-transactions": "^5.3.0-shapeshift.0"
   },
   "description": "Contract abstraction meta-class for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -46,5 +46,5 @@
   "sideEffects": false,
   "tarballHash": "0xd6ba83d7988befd0cb8ff3e22e43b593b5d116b291dd2fbcb4c115bbb779bb68",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

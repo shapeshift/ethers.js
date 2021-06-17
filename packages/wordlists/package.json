@@ -7,11 +7,11 @@
   },
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-hash": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0",
-    "@shapeshiftoss/ethers-strings": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-hash": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0-shapeshift.0"
   },
   "description": "Word lists for BIP39 wallets.",
   "ethereum": "donations.ethers.eth",
@@ -47,5 +47,5 @@
   "sideEffects": false,
   "tarballHash": "0x0fc0d1370c83b8284398abd428633528fd9a56664013c2616907d808a0bc4356",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

@@ -7,7 +7,7 @@
     "./lib/base64": "./lib/browser-base64.js"
   },
   "dependencies": {
-    "@shapeshiftoss/ethers-bytes": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0"
   },
   "description": "Base64 coder.",
   "ethereum": "donations.ethers.eth",
@@ -43,5 +43,5 @@
   "sideEffects": false,
   "tarballHash": "0x821a2974aa7e21005ac390712a7c3be0f412dd614c9d73cf8fc92c61acdfd868",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

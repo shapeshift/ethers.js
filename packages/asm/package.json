@@ -1,7 +1,7 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers": "^5.3.0"
+    "@shapeshiftoss/ethers": "^5.3.0-shapeshift.0"
   },
   "description": "ASM libraries and tools for the Ethereum EVM.",
   "ethereum": "donations.ethers.eth",
@@ -38,5 +38,5 @@
   },
   "tarballHash": "0xc19d11fdfbed4b581cab4b18a2f9c6e1b14e961fc6b80862b6b2eb48565ea394",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

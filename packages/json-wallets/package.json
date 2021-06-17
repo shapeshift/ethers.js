@@ -1,17 +1,17 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0",
-    "@shapeshiftoss/ethers-address": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-hdnode": "^5.3.0",
-    "@shapeshiftoss/ethers-keccak256": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-pbkdf2": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0",
-    "@shapeshiftoss/ethers-random": "^5.3.0",
-    "@shapeshiftoss/ethers-strings": "^5.3.0",
-    "@shapeshiftoss/ethers-transactions": "^5.3.0",
+    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-address": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-hdnode": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-keccak256": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-pbkdf2": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-random": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-transactions": "^5.3.0-shapeshift.0",
     "aes-js": "3.0.0",
     "scrypt-js": "3.0.1"
   },
@@ -49,5 +49,5 @@
   "sideEffects": false,
   "tarballHash": "0x9173dd0e81cfc66a7e0e538742a2dbd772d65db2605469a9c555aacb5e1bd31e",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }

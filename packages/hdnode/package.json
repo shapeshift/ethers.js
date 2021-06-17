@@ -1,18 +1,18 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0",
-    "@shapeshiftoss/ethers-basex": "^5.3.0",
-    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
-    "@shapeshiftoss/ethers-bytes": "^5.3.0",
-    "@shapeshiftoss/ethers-logger": "^5.3.0",
-    "@shapeshiftoss/ethers-pbkdf2": "^5.3.0",
-    "@shapeshiftoss/ethers-properties": "^5.3.0",
-    "@shapeshiftoss/ethers-sha2": "^5.3.0",
-    "@shapeshiftoss/ethers-signing-key": "^5.3.0",
-    "@shapeshiftoss/ethers-strings": "^5.3.0",
-    "@shapeshiftoss/ethers-transactions": "^5.3.0",
-    "@shapeshiftoss/ethers-wordlists": "^5.3.0"
+    "@shapeshiftoss/ethers-abstract-signer": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-basex": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-pbkdf2": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-sha2": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-signing-key": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-transactions": "^5.3.0-shapeshift.0",
+    "@shapeshiftoss/ethers-wordlists": "^5.3.0-shapeshift.0"
   },
   "description": "BIP32 Hierarchal Deterministic Node operations.",
   "ethereum": "donations.ethers.eth",
@@ -48,5 +48,5 @@
   "sideEffects": false,
   "tarballHash": "0x679661258a175765869be1be717897f819e79b0f482f43185008f082f19d509e",
   "types": "./lib/index.d.ts",
-  "version": "5.3.0"
+  "version": "5.3.0-shapeshift.0"
 }
