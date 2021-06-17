@@ -1,9 +1,9 @@
 "use strict";
 
-import { Networkish } from "@ethersproject/networks";
-import { deepCopy, defineReadOnly } from "@ethersproject/properties";
+import { Networkish } from "@shapeshiftoss/ethers-networks";
+import { deepCopy, defineReadOnly } from "@shapeshiftoss/ethers-properties";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

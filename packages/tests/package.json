@@ -1,10 +1,10 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@ethersproject/cli": "^5.3.0",
-    "@ethersproject/testcases": "^5.3.0",
+    "@shapeshiftoss/ethers-cli": "^5.3.0",
+    "@shapeshiftoss/ethers-testcases": "^5.3.0",
     "@types/mocha": "^5.2.0",
-    "ethers": "^5.3.0"
+    "@shapeshiftoss/ethers": "^5.3.0"
   },
   "description": "Testing package for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -20,19 +20,19 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers"
+    "@shapeshiftoss/ethers"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/tests",
+  "name": "@shapeshiftoss/ethers-tests",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/tests",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "exit 1"

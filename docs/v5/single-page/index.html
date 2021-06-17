@@ -3,7 +3,7 @@
   <head>
     <title>ethers</title>
     <link rel="stylesheet" type="text/css" href="/v5/static/style.css">
-    <meta property="og:title" content="ethers"/>
+    <meta property="og:title" content="@shapeshiftoss/ethers"/>
     <meta property="og:description" content="Documentation for ethers, a complete, tiny and simple Ethereum library."/>
     
     <meta property="og:image" content="/v5/static/social.jpg"/>
@@ -39,8 +39,8 @@
 
 <div class="code">/home/ricmoo&gt; npm install --save ethers</div><a name="/v5/getting-started/-%23-importing"></a><a name="/v5/getting-started/-%23-getting-started--importing"></a><a name="/v5/getting-started/"></a><h2 class="show-anchors"><div>Importing<div class="anchors"><a class="self" href="#/v5/getting-started/-%23-importing"></a></div></div></h2>
 <a name="/v5/getting-started/-%23-getting-started--importing--node-js"></a><a name="/v5/getting-started/"></a><h3 class="show-anchors"><div>Node.js<div class="anchors"><a class="self" href="#/v5/getting-started/-%23-getting-started--importing--node-js"></a></div></div></h3>
-<div class="code-title"><div>node.js require</div></div><div class="code">const { ethers } = require("ethers");
-</div><div class="code-title"><div>ES6 or TypeScript</div></div><div class="code">import { ethers } from "ethers";
+<div class="code-title"><div>node.js require</div></div><div class="code">const { ethers } = require("@shapeshiftoss/ethers");
+</div><div class="code-title"><div>ES6 or TypeScript</div></div><div class="code">import { ethers } from "@shapeshiftoss/ethers";
 </div><a name="/v5/getting-started/-%23-getting-started--importing--web-browser"></a><a name="/v5/getting-started/"></a><h3 class="show-anchors"><div>Web Browser<div class="anchors"><a class="self" href="#/v5/getting-started/-%23-getting-started--importing--web-browser"></a></div></div></h3><p>It is generally better practice (for security reasons) to copy the <a href="https://cdn.ethers.io/lib/ethers-5.0.esm.min.js">ethers library</a> to your own webserver and serve it yourself.</p>
 
 <p>For quick demos or prototyping though, you can load it in your Web Applications from our CDN.</p>
@@ -3541,7 +3541,7 @@ utils.solidityPack([ "uint96" ], [ "32309054545061485574011236401" ])
 </div></div><div class="page-separator"></div><a name="/v5/api/other/hardware/-%23-hardware-wallets"></a><a name="/v5/api/other/hardware/"></a><h1 class="show-anchors"><div>Hardware Wallets<div class="anchors"><a class="self" href="#/v5/api/other/hardware/-%23-hardware-wallets"></a></div></div></h1>
 <a name="/v5/api/other/hardware/-%23-hw-ledger"></a><a name="/v5/api/other/hardware/-%23-hardware-wallets--hw-ledger"></a><a name="/v5/api/other/hardware/"></a><h2 class="show-anchors"><div>LedgerSigner<span class="inherits"> inherits <a href="#/v5/api/signer/-%23-Signer">Signer</a></span><div class="anchors"><a class="self" href="#/v5/api/other/hardware/-%23-hw-ledger"></a><a class="source" href="https://github.com/ethers-io/ethers.js/blob/master/packages/hardware-wallets/src.ts/ledger.ts#L23">source</a></div></div></h2><p>The <a href="https://www.ledger.com">Ledger Hardware Wallets</a> are a fairly popular brand.</p>
 
-<div class="code-title"><div>Importing in ES6 or TypeScript</div></div><div class="code">import { LedgerSigner } from "@ethersproject/hardware-wallets";
+<div class="code-title"><div>Importing in ES6 or TypeScript</div></div><div class="code">import { LedgerSigner } from "@shapeshiftoss/ethers-hardware-wallets";
 </div><a name="/v5/api/other/hardware/-%23-hardware-wallets--hw-ledger--api"></a><a name="/v5/api/other/hardware/"></a><h3 class="show-anchors"><div>API<div class="anchors"><a class="self" href="#/v5/api/other/hardware/-%23-hardware-wallets--hw-ledger--api"></a></div></div></h3>
 <div class="property show-anchors"><div class="signature"><span class="modifier">new </span><span class="method">LedgerSigner</span><span class="symbol">(</span> <span class="symbol">[</span> <span class="param">provider</span> <span class="symbol">[</span> <span class="symbol">,</span> <span class="param">type</span> <span class="symbol">[</span> <span class="symbol">,</span> <span class="param">path</span> <span class="symbol">]</span> <span class="symbol">]</span> <span class="symbol">]</span> <span class="symbol">)</span> <span class="arrow">&rArr;</span> <span class="returns"><a href="#/v5/api/other/hardware/-%23-hw-ledger">LedgerSigner</a></span><div class="anchors"></div></div><div class="body"><p>Connects to a Ledger Hardware Wallet. The <i>type</i> if left unspecified is determined by the environment; in node the default is "hid" and in the browser "u2f" is the default. The default Ethereum path is used if <i>path</i> is left unspecified.</p>
 
@@ -4101,7 +4101,7 @@ OTHER OPTIONS
 
 <p>React Native is based on <a href="https://developer.apple.com/documentation/javascriptcore?language=objc">JavaScriptCore</a> (part of WebKit) and does not use Node.js or the common Web and DOM APIs. As such, there are many operations missing that a normal web environment or Node.js instance would provide.</p>
 
-<p>For this reason, there is a <a href="https://www.npmjs.com/package/@ethersproject/shims">Shims</a> module provided to fill in the holes.</p>
+<p>For this reason, there is a <a href="https://www.npmjs.com/package/@shapeshiftoss/ethers-shims">Shims</a> module provided to fill in the holes.</p>
 
 <a name="/v5/cookbook/react-native/-%23-cookbook-reactnative-shims"></a><a name="/v5/cookbook/react-native/-%23-cookbook-reactnative--cookbook-reactnative-shims"></a><a name="/v5/cookbook/react-native/"></a><h2 class="show-anchors"><div>Installing<div class="anchors"><a class="self" href="#/v5/cookbook/react-native/-%23-cookbook-reactnative-shims"></a></div></div></h2><p>To use ethers in React Native, you must either provide shims for the needed missing functionality, or use the ethers.js shim.</p>
 
@@ -4109,11 +4109,11 @@ OTHER OPTIONS
 
 <p>After installing packages, you may need to restart your packager and company.</p>
 
-<div class="code-title"><div>Installing</div></div><div class="code">/home/ricmoo/my-react-project&gt; npm install @ethersproject/shims --save</div><div class="code-title"><div>Importing</div></div><div class="code"><span class="comment">// Pull in the shims (BEFORE importing ethers)
-</span>import "@ethersproject/shims"
+<div class="code-title"><div>Installing</div></div><div class="code">/home/ricmoo/my-react-project&gt; npm install @shapeshiftoss/ethers-shims --save</div><div class="code-title"><div>Importing</div></div><div class="code"><span class="comment">// Pull in the shims (BEFORE importing ethers)
+</span>import "@shapeshiftoss/ethers-shims"
 
 <span class="comment">// Import the ethers library
-</span>import { ethers } from "ethers";
+</span>import { ethers } from "@shapeshiftoss/ethers";
 </div><a name="/v5/cookbook/react-native/-%23-cookbook-reactnative-security"></a><a name="/v5/cookbook/react-native/-%23-cookbook-reactnative--cookbook-reactnative-security"></a><a name="/v5/cookbook/react-native/"></a><h2 class="show-anchors"><div>Security<div class="anchors"><a class="self" href="#/v5/cookbook/react-native/-%23-cookbook-reactnative-security"></a></div></div></h2><p>The React Native environment does not contain a secure random source, which is used when computing random private keys. This could result in private keys that others could possibly guess, allowing funds to be stolen and assets manipulated.</p>
 
 <p>For this reason, it is <b>HIGHLY RECOMMENDED</b> to also install the <a href="https://www.npmjs.com/package/react-native-get-random-values">React Native get-random-values</a>, which <b>must</b> be included before the shims. If it worked correctly you should not receive any warning in the console regarding missing secure random sources.</p>
@@ -4122,10 +4122,10 @@ OTHER OPTIONS
 </span>import "react-native-get-random-values"
 
 <span class="comment">// Import the the ethers shims (**BEFORE** ethers)
-</span>import "@ethersproject/shims"
+</span>import "@shapeshiftoss/ethers-shims"
 
 <span class="comment">// Import the ethers library
-</span>import { ethers } from "ethers";
+</span>import { ethers } from "@shapeshiftoss/ethers";
 </div><div class="page-separator"></div><a name="/v5/migration/-%23-migration"></a><a name="/v5/migration/-%23-migration"></a><a name="/v5/migration/"></a><h1 class="show-anchors"><div>Migration Guide<div class="anchors"><a class="self" href="#/v5/migration/-%23-migration"></a></div></div></h1><p>Here are some migration guides when upgrading from older versions of Ethers or other libraries.</p>
 
 <div class="toc"><div style="padding-left: 0px"><span class="bullet">&bull;</span><a href="#/v5/migration/web3/">Migration: From Web3.js</a></div><div style="padding-left: 0px"><span class="bullet">&bull;</span><a href="#/v5/migration/ethers-v4/">Migration: From Ethers v4</a></div></div><div class="page-separator"></div><a name="/v5/migration/web3/-%23-migration-from-web3-js"></a><a name="/v5/migration/web3/"></a><h1 class="show-anchors"><div>Migration: From Web3.js<div class="anchors"><a class="self" href="#/v5/migration/web3/-%23-migration-from-web3-js"></a></div></div></h1><p>This migration guide focuses on migrating web3.js version 1.2.9 to ethers.js v5.</p>
@@ -4138,7 +4138,7 @@ OTHER OPTIONS
 var web3 = new Web3('http://localhost:8545');
 
 <span class="comment">// ethers
-</span>var ethers = require('ethers');
+</span>var ethers = require('@shapeshiftoss/ethers');
 const url = "http://127.0.0.1:8545";
 const provider = new ethers.providers.JsonRpcProvider(url);
 </div><a name="/v5/migration/web3/-%23-migration-from-web3-js--providers--connecting-to-ethereum-metamask"></a><a name="/v5/migration/web3/"></a><h3 class="show-anchors"><div>Connecting to Ethereum: Metamask<div class="anchors"><a class="self" href="#/v5/migration/web3/-%23-migration-from-web3-js--providers--connecting-to-ethereum-metamask"></a></div></div></h3>
@@ -4502,7 +4502,7 @@ wallet.mnemonic.path
 
 <p>Basically, the moral of the story is "be inclusive and don't drop people needlessly".</p>
 
-<a name="/v5/testing/-%23-testing-suites"></a><a name="/v5/testing/-%23-testing--testing-suites"></a><a name="/v5/testing/"></a><h2 class="show-anchors"><div>Test Suites<div class="anchors"><a class="self" href="#/v5/testing/-%23-testing-suites"></a></div></div></h2><p>The test suites are available as gzipped JSON files in the <code class="inline">@ethersproject/testcases</code>, which makes it easy to install and import (both GZIP and JSON are quite easy to consume from most languages). Each test suite also has its schema available in this package.</p>
+<a name="/v5/testing/-%23-testing-suites"></a><a name="/v5/testing/-%23-testing--testing-suites"></a><a name="/v5/testing/"></a><h2 class="show-anchors"><div>Test Suites<div class="anchors"><a class="self" href="#/v5/testing/-%23-testing-suites"></a></div></div></h2><p>The test suites are available as gzipped JSON files in the <code class="inline">@shapeshiftoss/ethers-testcases</code>, which makes it easy to install and import (both GZIP and JSON are quite easy to consume from most languages). Each test suite also has its schema available in this package.</p>
 
 <table class="table full"><tr><td align="center" width="34%"><b>Filename</b></td><td align="center" colspan="2" width="66%"><b>Test Cases</b></td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">accounts.json.gz</td><td align="left" colspan="2" width="66%">Private Keys and addresses in checksum and ICAP formats</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">contract-events.json.gz</td><td align="left" colspan="2" width="66%">Compiled Solidity, ABI interfaces, input types/values with the output types/values for emitted events; all tests were executed against real Ethereum nodes</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">contract-interface.json.gz</td><td align="left" colspan="2" width="66%">Compiled Solidity, ABI interfaces, input types/values with the output types/values, encoded and decoded binary data and normalized values for function calls executed against real Ethereum nodes.</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">contract-interface-abi2.json.gz</td><td align="left" colspan="2" width="66%">Identical to <code class="inline">contract-interface</code>, except with emphasis on the ABIv2 coder which supports nested dynami types and structured data</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">contract-signatures.json.gz</td><td align="left" colspan="2" width="66%">Contract signatures and matching selectors</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">hashes.json.gz</td><td align="left" colspan="2" width="66%">Data and respective hashes against a variety of hash functions</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">hdnode.json.gz</td><td align="left" colspan="2" width="66%">HDNodes (BIP-32) with mnemonics, entropy, seed and computed nodes with pathes and addresses</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">namehash.json.gz</td><td align="left" colspan="2" width="66%">ENS names along with computed [namehashes](link-namehash</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">nameprep.json.gz</td><td align="left" colspan="2" width="66%">IDNA and Nameprep representations including official vectors</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">rlp-coder.json.gz</td><td align="left" colspan="2" width="66%">Recursive-Length Prefix (RLP) data and encodings</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">solidity-hashes.json.gz</td><td align="left" colspan="2" width="66%">Hashes based on the Solidity non-standard packed form</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">transactions.json.gz</td><td align="left" colspan="2" width="66%">Signed and unsigned transactions with their serialized formats including both with and without EIP-155 replay protection</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">units.json.gz</td><td align="left" colspan="2" width="66%">Values converted between various units</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">wallets.json.gz</td><td align="left" colspan="2" width="66%">Keystore JSON format wallets, passwords and decrypted values</td><td class="fix">&nbsp;</td></tr><tr><td align="left" width="34%">wordlists.json.gz</td><td align="left" colspan="2" width="66%">Fully decompressed BIP-39 official wordlists</td><td class="fix">&nbsp;</td></tr><tr><td class="table-title" colspan="3">Test Suites</td><td class="fix">&nbsp;</td></tr></table><a name="/v5/testing/-%23-testing-api"></a><a name="/v5/testing/-%23-testing--testing-api"></a><a name="/v5/testing/"></a><h2 class="show-anchors"><div>Test Suite API<div class="anchors"><a class="self" href="#/v5/testing/-%23-testing-api"></a></div></div></h2><p>There are also convenience functions for those developing directly in TypeScript.</p>
 

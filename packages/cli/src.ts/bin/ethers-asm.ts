@@ -6,7 +6,7 @@ import fs from "fs";
 import _module from "module";
 import { resolve } from "path";
 
-import { assemble, disassemble, formatBytecode, parse, SemanticError, SemanticErrorSeverity } from "@ethersproject/asm";
+import { assemble, disassemble, formatBytecode, parse, SemanticError, SemanticErrorSeverity } from "@shapeshiftoss/ethers-asm";
 
 import { ArgParser, CLI, Help, Plugin } from "../cli";
 

@@ -1,15 +1,15 @@
 "use strict";
 
-import { getAddress } from "@ethersproject/address";
-import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
-import { arrayify, BytesLike, DataOptions, hexConcat, hexDataLength, hexDataSlice, hexlify, hexZeroPad, isBytesLike, SignatureLike, splitSignature, stripZeros, } from "@ethersproject/bytes";
-import { Zero } from "@ethersproject/constants";
-import { keccak256 } from "@ethersproject/keccak256";
-import { checkProperties } from "@ethersproject/properties";
-import * as RLP from "@ethersproject/rlp";
-import { computePublicKey, recoverPublicKey } from "@ethersproject/signing-key";
+import { getAddress } from "@shapeshiftoss/ethers-address";
+import { BigNumber, BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { arrayify, BytesLike, DataOptions, hexConcat, hexDataLength, hexDataSlice, hexlify, hexZeroPad, isBytesLike, SignatureLike, splitSignature, stripZeros, } from "@shapeshiftoss/ethers-bytes";
+import { Zero } from "@shapeshiftoss/ethers-constants";
+import { keccak256 } from "@shapeshiftoss/ethers-keccak256";
+import { checkProperties } from "@shapeshiftoss/ethers-properties";
+import * as RLP from "@shapeshiftoss/ethers-rlp";
+import { computePublicKey, recoverPublicKey } from "@shapeshiftoss/ethers-signing-key";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

@@ -29,8 +29,8 @@ export async function generate(): Promise<string> {
         return accum;
     }, <Record<string, boolean>>{ }));
 
-    const version = local.getPackage("ethers").version;;
-    const published = await npm.getPackage("ethers");
+    const version = local.getPackage("@shapeshiftoss/ethers").version;;
+    const published = await npm.getPackage("@shapeshiftoss/ethers");
 
     if (versions.indexOf(version) >= 0) {
         const line = `Version ${ version } already in CHANGELOG. Please edit before committing.`;

@@ -29,7 +29,7 @@ const {
     OncePollable,
     OnceBlockable
 
-} = require("@ethersproject/web");
+} = require("@shapeshiftoss/ethers-web");
 ```
 
 

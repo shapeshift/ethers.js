@@ -2,8 +2,8 @@
 
 import assert from "assert";
 
-import { ethers } from "ethers";
-import { loadTests, randomNumber, TestCase } from "@ethersproject/testcases";
+import { ethers } from "@shapeshiftoss/ethers";
+import { loadTests, randomNumber, TestCase } from "@shapeshiftoss/ethers-testcases";
 
 function randomCase(seed: string, text: string): string {
     return text.split("").map(function(c, index) {

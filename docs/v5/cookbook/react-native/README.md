@@ -11,15 +11,15 @@ Installing
 ----------
 
 ```
-/home/ricmoo/my-react-project> npm install @ethersproject/shims --save
+/home/ricmoo/my-react-project> npm install @shapeshiftoss/ethers-shims --save
 ```
 
 ```
 // Pull in the shims (BEFORE importing ethers)
-import "@ethersproject/shims"
+import "@shapeshiftoss/ethers-shims"
 
 // Import the ethers library
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 ```
 
 Security
@@ -30,9 +30,9 @@ Security
 import "react-native-get-random-values"
 
 // Import the the ethers shims (**BEFORE** ethers)
-import "@ethersproject/shims"
+import "@shapeshiftoss/ethers-shims"
 
 // Import the ethers library
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 ```
 

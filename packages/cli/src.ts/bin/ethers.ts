@@ -8,7 +8,7 @@ import { dirname, resolve } from "path";
 import REPL from "repl";
 import vm from "vm";
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 import { parseExpression as babelParseExpression } from "@babel/parser";
 

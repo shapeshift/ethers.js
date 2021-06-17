@@ -2,8 +2,8 @@
 
 import assert from "assert";
 
-import { ethers } from "ethers";
-import { loadTests } from "@ethersproject/testcases";
+import { ethers } from "@shapeshiftoss/ethers";
+import { loadTests } from "@shapeshiftoss/ethers-testcases";
 
 
 const bnify = ethers.BigNumber.from;

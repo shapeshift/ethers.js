@@ -108,10 +108,10 @@ const server = createServer(async (req, resp) => {
     });
 
     let result = null;
-    if (packageName === "ethers") {
-        result = getPackageInfo("ethers");
+    if (packageName === "@shapeshiftoss/ethers") {
+        result = getPackageInfo("@shapeshiftoss/ethers");
         console.log(`Using local ${ packageName }...`);
-    } else if (packageName.split("/")[0] === "@ethersproject") {
+    } else if (packageName.split("/")[0] === "@shapeshiftoss") {
         result = getPackageInfo(packageName.split("/").pop());
         console.log(`Using local ${ packageName }...`);
     } else if (packageName.split("/")[0] === "__packages__") {

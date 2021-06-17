@@ -1,6 +1,6 @@
 
-import { deepCopy } from "@ethersproject/properties";
-import { fetchJson } from "@ethersproject/web";
+import { deepCopy } from "@shapeshiftoss/ethers-properties";
+import { fetchJson } from "@shapeshiftoss/ethers-web";
 
 import { JsonRpcProvider } from "./json-rpc-provider";
 

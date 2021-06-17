@@ -7,8 +7,8 @@
     "./lib/pbkdf2": "./lib/browser-pbkdf2.js"
   },
   "dependencies": {
-    "@ethersproject/bytes": "^5.3.0",
-    "@ethersproject/sha2": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0",
+    "@shapeshiftoss/ethers-sha2": "^5.3.0"
   },
   "description": "The PBKDF2 password-pbased key derivation function for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -24,20 +24,20 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers",
+    "@shapeshiftoss/ethers",
     "pbkdf2"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/pbkdf2",
+  "name": "@shapeshiftoss/ethers-pbkdf2",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/pbkdf2",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -11,9 +11,9 @@
 import _BN from "bn.js";
 import BN = _BN.BN;
 
-import { Bytes, Hexable, hexlify, isBytes, isHexString } from "@ethersproject/bytes";
+import { Bytes, Hexable, hexlify, isBytes, isHexString } from "@shapeshiftoss/ethers-bytes";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

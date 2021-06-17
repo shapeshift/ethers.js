@@ -9,7 +9,7 @@ popular brand.
 
 _code: Importing in ES6 or TypeScript @lang<script>
 
-import { LedgerSigner } from "@ethersproject/hardware-wallets";
+import { LedgerSigner } from "@shapeshiftoss/ethers-hardware-wallets";
 
 
 _heading: API

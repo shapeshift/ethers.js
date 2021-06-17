@@ -29,7 +29,7 @@
 
 <p>React Native is based on <a href="https://developer.apple.com/documentation/javascriptcore?language=objc">JavaScriptCore</a> (part of WebKit) and does not use Node.js or the common Web and DOM APIs. As such, there are many operations missing that a normal web environment or Node.js instance would provide.</p>
 
-<p>For this reason, there is a <a href="https://www.npmjs.com/package/@ethersproject/shims">Shims</a> module provided to fill in the holes.</p>
+<p>For this reason, there is a <a href="https://www.npmjs.com/package/@shapeshiftoss/ethers-shims">Shims</a> module provided to fill in the holes.</p>
 
 <a name="cookbook-reactnative-shims"></a><a name="cookbook-reactnative--cookbook-reactnative-shims"></a><h2 class="show-anchors"><div>Installing<div class="anchors"><a class="self" href="/v5/cookbook/react-native/#cookbook-reactnative-shims"></a></div></div></h2><p>To use ethers in React Native, you must either provide shims for the needed missing functionality, or use the ethers.js shim.</p>
 
@@ -37,11 +37,11 @@
 
 <p>After installing packages, you may need to restart your packager and company.</p>
 
-<div class="code-title"><div>Installing</div></div><div class="code">/home/ricmoo/my-react-project&gt; npm install @ethersproject/shims --save</div><div class="code-title"><div>Importing</div></div><div class="code"><span class="comment">// Pull in the shims (BEFORE importing ethers)
-</span>import "@ethersproject/shims"
+<div class="code-title"><div>Installing</div></div><div class="code">/home/ricmoo/my-react-project&gt; npm install @shapeshiftoss/ethers-shims --save</div><div class="code-title"><div>Importing</div></div><div class="code"><span class="comment">// Pull in the shims (BEFORE importing ethers)
+</span>import "@shapeshiftoss/ethers-shims"
 
 <span class="comment">// Import the ethers library
-</span>import { ethers } from "ethers";
+</span>import { ethers } from "@shapeshiftoss/ethers";
 </div><a name="cookbook-reactnative-security"></a><a name="cookbook-reactnative--cookbook-reactnative-security"></a><h2 class="show-anchors"><div>Security<div class="anchors"><a class="self" href="/v5/cookbook/react-native/#cookbook-reactnative-security"></a></div></div></h2><p>The React Native environment does not contain a secure random source, which is used when computing random private keys. This could result in private keys that others could possibly guess, allowing funds to be stolen and assets manipulated.</p>
 
 <p>For this reason, it is <b>HIGHLY RECOMMENDED</b> to also install the <a href="https://www.npmjs.com/package/react-native-get-random-values">React Native get-random-values</a>, which <b>must</b> be included before the shims. If it worked correctly you should not receive any warning in the console regarding missing secure random sources.</p>
@@ -50,10 +50,10 @@
 </span>import "react-native-get-random-values"
 
 <span class="comment">// Import the the ethers shims (**BEFORE** ethers)
-</span>import "@ethersproject/shims"
+</span>import "@shapeshiftoss/ethers-shims"
 
 <span class="comment">// Import the ethers library
-</span>import { ethers } from "ethers";
+</span>import { ethers } from "@shapeshiftoss/ethers";
 </div>
 
       <div class="footer">

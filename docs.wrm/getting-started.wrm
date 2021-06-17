@@ -19,11 +19,11 @@ _heading: Node.js
 
 _code: node.js require @lang<script>
 
-const { ethers } = require("ethers");
+const { ethers } = require("@shapeshiftoss/ethers");
 
 _code: ES6 or TypeScript @lang<script>
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 
 _heading: Web Browser

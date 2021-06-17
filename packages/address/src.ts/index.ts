@@ -1,11 +1,11 @@
 "use strict";
 
-import { arrayify, BytesLike, concat, hexDataLength, hexDataSlice, isHexString, stripZeros } from "@ethersproject/bytes";
-import { BigNumber, BigNumberish, _base16To36, _base36To16 } from "@ethersproject/bignumber";
-import { keccak256 } from "@ethersproject/keccak256";
-import { encode } from "@ethersproject/rlp";
+import { arrayify, BytesLike, concat, hexDataLength, hexDataSlice, isHexString, stripZeros } from "@shapeshiftoss/ethers-bytes";
+import { BigNumber, BigNumberish, _base16To36, _base36To16 } from "@shapeshiftoss/ethers-bignumber";
+import { keccak256 } from "@shapeshiftoss/ethers-keccak256";
+import { encode } from "@shapeshiftoss/ethers-rlp";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

@@ -1,20 +1,20 @@
 "use strict";
 
-import { getAddress } from "@ethersproject/address";
-import { Provider, TransactionRequest } from "@ethersproject/abstract-provider";
-import { ExternallyOwnedAccount, Signer, TypedDataDomain, TypedDataField, TypedDataSigner } from "@ethersproject/abstract-signer";
-import { arrayify, Bytes, BytesLike, concat, hexDataSlice, isHexString, joinSignature, SignatureLike } from "@ethersproject/bytes";
-import { hashMessage, _TypedDataEncoder } from "@ethersproject/hash";
-import { defaultPath, HDNode, entropyToMnemonic, Mnemonic } from "@ethersproject/hdnode";
-import { keccak256 } from "@ethersproject/keccak256";
-import { defineReadOnly, resolveProperties } from "@ethersproject/properties";
-import { randomBytes } from "@ethersproject/random";
-import { SigningKey } from "@ethersproject/signing-key";
-import { decryptJsonWallet, decryptJsonWalletSync, encryptKeystore, ProgressCallback } from "@ethersproject/json-wallets";
-import { computeAddress, recoverAddress, serialize, UnsignedTransaction } from "@ethersproject/transactions";
-import { Wordlist } from "@ethersproject/wordlists";
+import { getAddress } from "@shapeshiftoss/ethers-address";
+import { Provider, TransactionRequest } from "@shapeshiftoss/ethers-abstract-provider";
+import { ExternallyOwnedAccount, Signer, TypedDataDomain, TypedDataField, TypedDataSigner } from "@shapeshiftoss/ethers-abstract-signer";
+import { arrayify, Bytes, BytesLike, concat, hexDataSlice, isHexString, joinSignature, SignatureLike } from "@shapeshiftoss/ethers-bytes";
+import { hashMessage, _TypedDataEncoder } from "@shapeshiftoss/ethers-hash";
+import { defaultPath, HDNode, entropyToMnemonic, Mnemonic } from "@shapeshiftoss/ethers-hdnode";
+import { keccak256 } from "@shapeshiftoss/ethers-keccak256";
+import { defineReadOnly, resolveProperties } from "@shapeshiftoss/ethers-properties";
+import { randomBytes } from "@shapeshiftoss/ethers-random";
+import { SigningKey } from "@shapeshiftoss/ethers-signing-key";
+import { decryptJsonWallet, decryptJsonWalletSync, encryptKeystore, ProgressCallback } from "@shapeshiftoss/ethers-json-wallets";
+import { computeAddress, recoverAddress, serialize, UnsignedTransaction } from "@shapeshiftoss/ethers-transactions";
+import { Wordlist } from "@shapeshiftoss/ethers-wordlists";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

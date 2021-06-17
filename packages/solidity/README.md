@@ -21,7 +21,7 @@ const {
     keccak256,
     sha256
 
-} = require("@ethersproject/solidity");
+} = require("@shapeshiftoss/ethers-solidity");
 ```
 
 

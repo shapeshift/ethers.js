@@ -20,7 +20,7 @@ const {
     encode,
     decode
 
-} = require("@ethersproject/rlp");
+} = require("@shapeshiftoss/ethers-rlp");
 ```
 
 

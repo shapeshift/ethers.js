@@ -20,11 +20,11 @@ Importing
 ### Node.js
 
 ```
-const { ethers } = require("ethers");
+const { ethers } = require("@shapeshiftoss/ethers");
 ```
 
 ```
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 ```
 
 ### Web Browser

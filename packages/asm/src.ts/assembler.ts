@@ -9,7 +9,7 @@ import { dirname, resolve } from "path";
 import _module from "module";
 import vm from "vm";
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 import { Opcode } from "./opcodes";
 

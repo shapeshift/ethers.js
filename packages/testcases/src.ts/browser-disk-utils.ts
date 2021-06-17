@@ -2,7 +2,7 @@
 
 import inflate from "tiny-inflate";
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 // This file is populated by the rollup-pre-alias.config.js
 import data from "./browser-data.json";

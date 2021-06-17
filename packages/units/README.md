@@ -26,7 +26,7 @@ const {
 
     commify
 
-} = require("@ethersproject/units");
+} = require("@shapeshiftoss/ethers-units");
 ```
 
 

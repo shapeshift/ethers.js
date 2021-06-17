@@ -147,7 +147,7 @@ export function invalidate(cloudfront: AWS.CloudFront, distributionId: string): 
         local.updateJson(pathJson, { gitHead: undefined }, true);
     }
 
-    if (publishNames.indexOf("ethers") >= 0 || forcePublish) {
+    if (publishNames.indexOf("@shapeshiftoss/ethers") >= 0 || forcePublish) {
         const change = getLatestChange();
 
         const patchVersion = change.version.substring(1);

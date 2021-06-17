@@ -9,8 +9,8 @@ ethers differs quite substantially from Web3.js.
 A Provider is an abstraction of non-account-based operations on a blockchain and
 is generally not directly involved in signing transaction or data.
 
-For signing, see the [Abstract Signer](https://www.npmjs.com/package/@ethersproject/abstract-signer)
-or [Wallet](https://www.npmjs.com/package/@ethersproject/wallet) sub-modules.
+For signing, see the [Abstract Signer](https://www.npmjs.com/package/@shapeshiftoss/ethers-abstract-signer)
+or [Wallet](https://www.npmjs.com/package/@shapeshiftoss/ethers-wallet) sub-modules.
 
 For more information, see the [documentation](https://docs.ethers.io/v5/api/providers/).
 
@@ -49,7 +49,7 @@ const {
     EventType,
     Listener
 
-} = require("@ethersproject/abstract-provider");
+} = require("@shapeshiftoss/ethers-abstract-provider");
 ```
 
 License

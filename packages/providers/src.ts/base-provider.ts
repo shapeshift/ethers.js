@@ -3,22 +3,22 @@
 import {
     Block, BlockTag, BlockWithTransactions, EventType, Filter, FilterByBlockHash, ForkEvent,
     Listener, Log, Provider, TransactionReceipt, TransactionRequest, TransactionResponse
-} from "@ethersproject/abstract-provider";
-import { Base58 } from "@ethersproject/basex";
-import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
-import { arrayify, concat, hexConcat, hexDataLength, hexDataSlice, hexlify, hexValue, hexZeroPad, isHexString } from "@ethersproject/bytes";
-import { HashZero } from "@ethersproject/constants";
-import { namehash } from "@ethersproject/hash";
-import { getNetwork, Network, Networkish } from "@ethersproject/networks";
-import { Deferrable, defineReadOnly, getStatic, resolveProperties } from "@ethersproject/properties";
-import { Transaction } from "@ethersproject/transactions";
-import { sha256 } from "@ethersproject/sha2";
-import { toUtf8Bytes, toUtf8String } from "@ethersproject/strings";
-import { poll } from "@ethersproject/web";
+} from "@shapeshiftoss/ethers-abstract-provider";
+import { Base58 } from "@shapeshiftoss/ethers-basex";
+import { BigNumber, BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { arrayify, concat, hexConcat, hexDataLength, hexDataSlice, hexlify, hexValue, hexZeroPad, isHexString } from "@shapeshiftoss/ethers-bytes";
+import { HashZero } from "@shapeshiftoss/ethers-constants";
+import { namehash } from "@shapeshiftoss/ethers-hash";
+import { getNetwork, Network, Networkish } from "@shapeshiftoss/ethers-networks";
+import { Deferrable, defineReadOnly, getStatic, resolveProperties } from "@shapeshiftoss/ethers-properties";
+import { Transaction } from "@shapeshiftoss/ethers-transactions";
+import { sha256 } from "@shapeshiftoss/ethers-sha2";
+import { toUtf8Bytes, toUtf8String } from "@shapeshiftoss/ethers-strings";
+import { poll } from "@shapeshiftoss/ethers-web";
 
 import bech32 from "bech32";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

@@ -18,7 +18,7 @@ const {
 
     pbkdf2
 
-} = require("@ethersproject/pbkdf2");
+} = require("@shapeshiftoss/ethers-pbkdf2");
 ```
 
 

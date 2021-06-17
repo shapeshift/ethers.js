@@ -18,7 +18,7 @@ function getConfig(format) {
     if (format === "umd") {
         input = "./packages/tests/lib/index.js";
         mainFields = [ "browser", "main" ];
-        globals = { ethers: "ethers"  };
+        globals = { ethers: "@shapeshiftoss/ethers"  };
     }
 
     const plugins = [
@@ -49,7 +49,7 @@ function getConfig(format) {
       },
       context: "window",
       treeshake: false,
-      external: [ "ethers" ],
+      external: [ "@shapeshiftoss/ethers" ],
       plugins: plugins
   };
 }

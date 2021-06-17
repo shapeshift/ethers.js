@@ -1,6 +1,6 @@
 "use strict";
 
-import { toUtf8Bytes, toUtf8String } from "@ethersproject/strings";
+import { toUtf8Bytes, toUtf8String } from "@shapeshiftoss/ethers-strings";
 
 import { logger, Wordlist } from "./wordlist";
 

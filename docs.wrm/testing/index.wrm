@@ -60,7 +60,7 @@ Basically, the moral of the story is "be inclusive and don't drop people needles
 _subsection: Test Suites @<testing-suites>
 
 The test suites are available as gzipped JSON files in the
-``@ethersproject/testcases``, which makes it easy to install and import
+``@shapeshiftoss/ethers-testcases``, which makes it easy to install and import
 (both GZIP and JSON are quite easy to consume from most languages). Each
 test suite also has its schema available in this package.
 

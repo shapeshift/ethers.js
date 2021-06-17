@@ -3,7 +3,7 @@
 //let web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8549'));
 
 //import { compile as _compile } from "solc";
-import { solc } from "@ethersproject/cli";
+import { solc } from "@shapeshiftoss/ethers-cli";
 
 import { randomHexString, randomNumber } from ".."
 import { BN, keccak256, toChecksumAddress } from "ethereumjs-util";

@@ -15,7 +15,7 @@ var Web3 = require('web3');
 var web3 = new Web3('http://localhost:8545');
 
 // ethers
-var ethers = require('ethers');
+var ethers = require('@shapeshiftoss/ethers');
 const url = "http://127.0.0.1:8545";
 const provider = new ethers.providers.JsonRpcProvider(url);
 

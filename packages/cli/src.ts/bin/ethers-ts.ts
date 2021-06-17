@@ -5,7 +5,7 @@
 import fs from 'fs';
 import { join as pathJoin } from "path";
 
-import { ethers } from 'ethers';
+import { ethers } from '@shapeshiftoss/ethers';
 
 import { ArgParser, CLI, Help, Plugin } from '../cli';
 import { header as Header, generate as generateTypeScript } from "../typescript";

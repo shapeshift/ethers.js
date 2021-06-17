@@ -37,7 +37,7 @@ const {
 
     Utf8ErrorFunc,
 
-} = require("@ethersproject/strings");
+} = require("@shapeshiftoss/ethers-strings");
 ```
 
 

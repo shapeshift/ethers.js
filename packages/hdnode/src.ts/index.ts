@@ -4,19 +4,19 @@
 // See: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 
 
-import { ExternallyOwnedAccount } from "@ethersproject/abstract-signer";
-import { Base58 } from "@ethersproject/basex";
-import { arrayify, BytesLike, concat, hexDataSlice, hexZeroPad, hexlify } from "@ethersproject/bytes";
-import { BigNumber } from "@ethersproject/bignumber";
-import { toUtf8Bytes, UnicodeNormalizationForm } from "@ethersproject/strings";
-import { pbkdf2 } from "@ethersproject/pbkdf2";
-import { defineReadOnly } from "@ethersproject/properties";
-import { SigningKey } from "@ethersproject/signing-key";
-import { computeHmac, ripemd160, sha256, SupportedAlgorithm } from "@ethersproject/sha2";
-import { computeAddress } from "@ethersproject/transactions";
-import { Wordlist, wordlists } from "@ethersproject/wordlists";
+import { ExternallyOwnedAccount } from "@shapeshiftoss/ethers-abstract-signer";
+import { Base58 } from "@shapeshiftoss/ethers-basex";
+import { arrayify, BytesLike, concat, hexDataSlice, hexZeroPad, hexlify } from "@shapeshiftoss/ethers-bytes";
+import { BigNumber } from "@shapeshiftoss/ethers-bignumber";
+import { toUtf8Bytes, UnicodeNormalizationForm } from "@shapeshiftoss/ethers-strings";
+import { pbkdf2 } from "@shapeshiftoss/ethers-pbkdf2";
+import { defineReadOnly } from "@shapeshiftoss/ethers-properties";
+import { SigningKey } from "@shapeshiftoss/ethers-signing-key";
+import { computeHmac, ripemd160, sha256, SupportedAlgorithm } from "@shapeshiftoss/ethers-sha2";
+import { computeAddress } from "@shapeshiftoss/ethers-transactions";
+import { Wordlist, wordlists } from "@shapeshiftoss/ethers-wordlists";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

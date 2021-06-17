@@ -10,7 +10,7 @@ import { loadJson, saveJson } from "../utils";
     }, <Record<string, string>>({ }));
     dirnames.forEach((dirname) => {
         // Skip ethers; it's versions are locked during update-versions
-        if (dirname === "ethers") { return; }
+        if (dirname === "@shapeshiftoss/ethers") { return; }
 
         console.log(dirname);
 

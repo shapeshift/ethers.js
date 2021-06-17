@@ -1,7 +1,7 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "ethers": "^5.3.0"
+    "@shapeshiftoss/ethers": "^5.3.0"
   },
   "description": "ASM libraries and tools for the Ethereum EVM.",
   "ethereum": "donations.ethers.eth",
@@ -23,14 +23,14 @@
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/asm",
+  "name": "@shapeshiftoss/ethers-asm",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/asm",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "generate": "node ./generate.js",

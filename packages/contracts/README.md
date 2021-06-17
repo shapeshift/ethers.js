@@ -42,7 +42,7 @@ const {
     ContractReceipt,
     ContractTransaction
 
-} = require("@ethersproject/contracts");
+} = require("@shapeshiftoss/ethers-contracts");
 ```
 
 

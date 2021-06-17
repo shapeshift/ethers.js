@@ -1,10 +1,10 @@
 "use strict";
 
-import { arrayify, BytesLike, concat, hexConcat, hexlify } from "@ethersproject/bytes";
-import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
-import { defineReadOnly } from "@ethersproject/properties";
+import { arrayify, BytesLike, concat, hexConcat, hexlify } from "@shapeshiftoss/ethers-bytes";
+import { BigNumber, BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { defineReadOnly } from "@shapeshiftoss/ethers-properties";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "../_version";
 const logger = new Logger(version);
 

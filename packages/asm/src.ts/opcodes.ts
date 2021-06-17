@@ -10,7 +10,7 @@
 //   See: https://eips.ethereum.org/EIPS/eip-1052
 
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 export enum OpcodeMemoryAccess {
     write = "write",

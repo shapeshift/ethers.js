@@ -21,7 +21,7 @@ const utils_1 = require("../utils");
         }, ({}));
         path_1.dirnames.forEach((dirname) => {
             // Skip ethers; it's versions are locked during update-versions
-            if (dirname === "ethers") {
+            if (dirname === "@shapeshiftoss/ethers") {
                 return;
             }
             console.log(dirname);

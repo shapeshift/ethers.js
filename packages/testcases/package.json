@@ -1,6 +1,6 @@
 {
   "_devDependencies": {
-    "@ethersproject/cli": "^5.0.0",
+    "@shapeshiftoss/ethers-cli": "^5.0.0",
     "@types/bip39": "2.4.1",
     "@types/bitcoinjs-lib": "3.3.2",
     "bip39": "2.5.0",
@@ -16,11 +16,11 @@
     "./lib/disk-utils": "./lib/browser-disk-utils.js"
   },
   "dependencies": {
-    "@ethersproject/bignumber": "^5.3.0",
-    "@ethersproject/bytes": "^5.3.0",
-    "@ethersproject/keccak256": "^5.3.0",
-    "@ethersproject/strings": "^5.3.0",
-    "ethers": "^5.3.0",
+    "@shapeshiftoss/ethers-bignumber": "^5.3.0",
+    "@shapeshiftoss/ethers-bytes": "^5.3.0",
+    "@shapeshiftoss/ethers-keccak256": "^5.3.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0",
+    "@shapeshiftoss/ethers": "^5.3.0",
     "tiny-inflate": "1.0.3"
   },
   "description": "Testcases for Ethereum and scripts to generate testcases.",
@@ -37,19 +37,19 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers"
+    "@shapeshiftoss/ethers"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/testcases",
+  "name": "@shapeshiftoss/ethers-testcases",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/testcases",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,11 +1,11 @@
 "use strict";
 
-import { encode as base64Encode } from "@ethersproject/base64";
-import { hexlify, isBytesLike } from "@ethersproject/bytes";
-import { shallowCopy } from "@ethersproject/properties";
-import { toUtf8Bytes, toUtf8String } from "@ethersproject/strings";
+import { encode as base64Encode } from "@shapeshiftoss/ethers-base64";
+import { hexlify, isBytesLike } from "@shapeshiftoss/ethers-bytes";
+import { shallowCopy } from "@shapeshiftoss/ethers-properties";
+import { toUtf8Bytes, toUtf8String } from "@shapeshiftoss/ethers-strings";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

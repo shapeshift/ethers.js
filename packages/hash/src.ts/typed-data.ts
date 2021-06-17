@@ -1,11 +1,11 @@
-import { TypedDataDomain, TypedDataField } from "@ethersproject/abstract-signer";
-import { getAddress } from "@ethersproject/address";
-import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
-import { arrayify, BytesLike, hexConcat, hexlify, hexZeroPad, isHexString } from "@ethersproject/bytes";
-import { keccak256 } from "@ethersproject/keccak256";
-import { deepCopy, defineReadOnly, shallowCopy } from "@ethersproject/properties";
+import { TypedDataDomain, TypedDataField } from "@shapeshiftoss/ethers-abstract-signer";
+import { getAddress } from "@shapeshiftoss/ethers-address";
+import { BigNumber, BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { arrayify, BytesLike, hexConcat, hexlify, hexZeroPad, isHexString } from "@shapeshiftoss/ethers-bytes";
+import { keccak256 } from "@shapeshiftoss/ethers-keccak256";
+import { deepCopy, defineReadOnly, shallowCopy } from "@shapeshiftoss/ethers-properties";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

@@ -54,9 +54,9 @@ function generate() {
             }
             return accum;
         }, {}));
-        const version = local.getPackage("ethers").version;
+        const version = local.getPackage("@shapeshiftoss/ethers").version;
         ;
-        const published = yield npm.getPackage("ethers");
+        const published = yield npm.getPackage("@shapeshiftoss/ethers");
         if (versions.indexOf(version) >= 0) {
             const line = `Version ${version} already in CHANGELOG. Please edit before committing.`;
             console.log(log_1.colorify.red(utils_1.repeat("=", line.length)));

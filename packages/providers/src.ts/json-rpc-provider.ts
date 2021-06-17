@@ -2,18 +2,18 @@
 
 // See: https://github.com/ethereum/wiki/wiki/JSON-RPC
 
-import { Provider, TransactionRequest, TransactionResponse } from "@ethersproject/abstract-provider";
-import { Signer, TypedDataDomain, TypedDataField, TypedDataSigner } from "@ethersproject/abstract-signer";
-import { BigNumber } from "@ethersproject/bignumber";
-import { Bytes, hexlify, hexValue, isHexString } from "@ethersproject/bytes";
-import { _TypedDataEncoder } from "@ethersproject/hash";
-import { Network, Networkish } from "@ethersproject/networks";
-import { checkProperties, deepCopy, Deferrable, defineReadOnly, getStatic, resolveProperties, shallowCopy } from "@ethersproject/properties";
-import { toUtf8Bytes } from "@ethersproject/strings";
-import { AccessList, accessListify } from "@ethersproject/transactions";
-import { ConnectionInfo, fetchJson, poll } from "@ethersproject/web";
+import { Provider, TransactionRequest, TransactionResponse } from "@shapeshiftoss/ethers-abstract-provider";
+import { Signer, TypedDataDomain, TypedDataField, TypedDataSigner } from "@shapeshiftoss/ethers-abstract-signer";
+import { BigNumber } from "@shapeshiftoss/ethers-bignumber";
+import { Bytes, hexlify, hexValue, isHexString } from "@shapeshiftoss/ethers-bytes";
+import { _TypedDataEncoder } from "@shapeshiftoss/ethers-hash";
+import { Network, Networkish } from "@shapeshiftoss/ethers-networks";
+import { checkProperties, deepCopy, Deferrable, defineReadOnly, getStatic, resolveProperties, shallowCopy } from "@shapeshiftoss/ethers-properties";
+import { toUtf8Bytes } from "@shapeshiftoss/ethers-strings";
+import { AccessList, accessListify } from "@shapeshiftoss/ethers-transactions";
+import { ConnectionInfo, fetchJson, poll } from "@shapeshiftoss/ethers-web";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

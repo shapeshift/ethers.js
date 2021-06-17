@@ -1,13 +1,13 @@
 "use strict";
 
-import { BigNumber, BigNumberish } from "@ethersproject/bignumber";
-import { BytesLike, isHexString } from "@ethersproject/bytes";
-import { Network } from "@ethersproject/networks";
-import { Deferrable, Description, defineReadOnly } from "@ethersproject/properties";
-import { AccessListish, Transaction } from "@ethersproject/transactions";
-import { OnceBlockable } from "@ethersproject/web";
+import { BigNumber, BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { BytesLike, isHexString } from "@shapeshiftoss/ethers-bytes";
+import { Network } from "@shapeshiftoss/ethers-networks";
+import { Deferrable, Description, defineReadOnly } from "@shapeshiftoss/ethers-properties";
+import { AccessListish, Transaction } from "@shapeshiftoss/ethers-transactions";
+import { OnceBlockable } from "@shapeshiftoss/ethers-web";
 
-import { Logger } from "@ethersproject/logger";
+import { Logger } from "@shapeshiftoss/ethers-logger";
 import { version } from "./_version";
 const logger = new Logger(version);
 

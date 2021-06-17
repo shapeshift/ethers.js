@@ -19,7 +19,7 @@ const {
 
     keccak256
 
-} = require("@ethersproject/keccak256");
+} = require("@shapeshiftoss/ethers-keccak256");
 ```
 
 

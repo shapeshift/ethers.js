@@ -10,7 +10,7 @@ API
 ===
 
 ```
-import { LedgerSigner } from "@ethersproject/hardware-wallets";
+import { LedgerSigner } from "@shapeshiftoss/ethers-hardware-wallets";
 const signer = new LedgerSigner(provider, type, path);
 // By default:
 //   - in node, type = "hid"

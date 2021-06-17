@@ -68,7 +68,7 @@ const {
     Network,
     Networkish
 
-} = require("@ethersproject/providers");
+} = require("@shapeshiftoss/ethers-providers");
 ```
 
 

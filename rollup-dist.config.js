@@ -81,7 +81,7 @@ function getUmdConfig() {
         output: {
             file: `packages/ethers/dist/ethers.umd.js`,
             format: "umd",
-            name: "ethers",
+            name: "@shapeshiftoss/ethers",
             sourcemap: true
         },
         context: "window",

@@ -7,7 +7,7 @@
     "./lib/base64": "./lib/browser-base64.js"
   },
   "dependencies": {
-    "@ethersproject/bytes": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0"
   },
   "description": "Base64 coder.",
   "ethereum": "donations.ethers.eth",
@@ -23,19 +23,19 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers"
+    "@shapeshiftoss/ethers"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/base64",
+  "name": "@shapeshiftoss/ethers-base64",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/base64",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

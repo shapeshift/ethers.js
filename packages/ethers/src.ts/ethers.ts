@@ -1,29 +1,29 @@
 "use strict";
 
-import { BaseContract, Contract, ContractFactory } from "@ethersproject/contracts";
+import { BaseContract, Contract, ContractFactory } from "@shapeshiftoss/ethers-contracts";
 
-import { BigNumber, FixedNumber } from "@ethersproject/bignumber";
+import { BigNumber, FixedNumber } from "@shapeshiftoss/ethers-bignumber";
 
-import { Signer, VoidSigner } from "@ethersproject/abstract-signer";
-import { Wallet } from "@ethersproject/wallet";
+import { Signer, VoidSigner } from "@shapeshiftoss/ethers-abstract-signer";
+import { Wallet } from "@shapeshiftoss/ethers-wallet";
 
-import * as constants from "@ethersproject/constants";
+import * as constants from "@shapeshiftoss/ethers-constants";
 
-import * as providers from "@ethersproject/providers";
-import { getDefaultProvider } from "@ethersproject/providers";
+import * as providers from "@shapeshiftoss/ethers-providers";
+import { getDefaultProvider } from "@shapeshiftoss/ethers-providers";
 
-import { Wordlist, wordlists} from "@ethersproject/wordlists";
+import { Wordlist, wordlists} from "@shapeshiftoss/ethers-wordlists";
 
 import * as utils from "./utils";
 
-import { ErrorCode as errors, Logger } from "@ethersproject/logger";
+import { ErrorCode as errors, Logger } from "@shapeshiftoss/ethers-logger";
 
 ////////////////////////
 // Types
 
-import { BigNumberish } from "@ethersproject/bignumber";
-import { Bytes, BytesLike, Signature } from "@ethersproject/bytes";
-import { Transaction, UnsignedTransaction } from "@ethersproject/transactions";
+import { BigNumberish } from "@shapeshiftoss/ethers-bignumber";
+import { Bytes, BytesLike, Signature } from "@shapeshiftoss/ethers-bytes";
+import { Transaction, UnsignedTransaction } from "@shapeshiftoss/ethers-transactions";
 
 
 ////////////////////////
@@ -52,7 +52,7 @@ import {
     PopulatedTransaction,
 
     ContractInterface
-} from "@ethersproject/contracts";
+} from "@shapeshiftoss/ethers-contracts";
 
 
 ////////////////////////

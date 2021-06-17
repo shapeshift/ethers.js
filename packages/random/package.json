@@ -7,8 +7,8 @@
     "./lib/random": "./lib/browser-random.js"
   },
   "dependencies": {
-    "@ethersproject/bytes": "^5.3.0",
-    "@ethersproject/logger": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0"
   },
   "description": "Random utility functions for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -24,20 +24,20 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers",
+    "@shapeshiftoss/ethers",
     "random"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/random",
+  "name": "@shapeshiftoss/ethers-random",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/random",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

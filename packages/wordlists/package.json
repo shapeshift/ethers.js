@@ -7,11 +7,11 @@
   },
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@ethersproject/bytes": "^5.3.0",
-    "@ethersproject/hash": "^5.3.0",
-    "@ethersproject/logger": "^5.3.0",
-    "@ethersproject/properties": "^5.3.0",
-    "@ethersproject/strings": "^5.3.0"
+    "@shapeshiftoss/ethers-bytes": "^5.3.0",
+    "@shapeshiftoss/ethers-hash": "^5.3.0",
+    "@shapeshiftoss/ethers-logger": "^5.3.0",
+    "@shapeshiftoss/ethers-properties": "^5.3.0",
+    "@shapeshiftoss/ethers-strings": "^5.3.0"
   },
   "description": "Word lists for BIP39 wallets.",
   "ethereum": "donations.ethers.eth",
@@ -27,19 +27,19 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers"
+    "@shapeshiftoss/ethers"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/wordlists",
+  "name": "@shapeshiftoss/ethers-wordlists",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/wordlists",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

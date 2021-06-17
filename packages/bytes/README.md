@@ -54,7 +54,7 @@ const {
     SignatureLike,
     Signature
 
-} = require("@ethersproject/bytes");
+} = require("@shapeshiftoss/ethers-bytes");
 ```
 
 

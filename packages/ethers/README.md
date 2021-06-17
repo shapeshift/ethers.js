@@ -72,7 +72,7 @@ Or browse the entire documentation as a [single page](https://docs.ethers.io/v5/
 Ancillary Packages
 ------------------
 
-These are a number of packages not included in the umbrella `ethers` npm package, and
+These are a number of packages not included in the umbrella `@shapeshiftoss/ethers` npm package, and
 additional packages are always being added. Often these packages are for specific
 use-cases, so rather than adding them to the umbrella package, they are added as
 ancillary packages, which can be included by those who need them, while not bloating
@@ -80,9 +80,9 @@ everyone else with packages they do not need.
 
 We will keep a list of useful packages here.
 
-- `@ethersproject/experimental` ([documentation](https://docs.ethers.io))
-- `@ethersproject/cli` ([documentation](https://docs.ethers.io))
-- `@ethersproject/hardware-wallets` ([documentation](https://docs.ethers.io))
+- `@shapeshiftoss/ethers-experimental` ([documentation](https://docs.ethers.io))
+- `@shapeshiftoss/ethers-cli` ([documentation](https://docs.ethers.io))
+- `@shapeshiftoss/ethers-hardware-wallets` ([documentation](https://docs.ethers.io))
 
 
 License

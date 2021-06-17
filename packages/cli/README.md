@@ -7,7 +7,7 @@ and debug Ethereum-related tasks using the ethers.js library.
 **To install:**
 
 ```
-/home/ricmoo> npm install -g @ethersproject/cli
+/home/ricmoo> npm install -g @shapeshiftoss/ethers-cli
 ```
 
 -----

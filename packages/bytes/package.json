@@ -1,7 +1,7 @@
 {
   "author": "Richard Moore <me@ricmoo.com>",
   "dependencies": {
-    "@ethersproject/logger": "^5.3.0"
+    "@shapeshiftoss/ethers-logger": "^5.3.0"
   },
   "description": "Bytes utility functions for ethers.",
   "ethereum": "donations.ethers.eth",
@@ -17,19 +17,19 @@
   ],
   "keywords": [
     "Ethereum",
-    "ethers"
+    "@shapeshiftoss/ethers"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib.esm/index.js",
-  "name": "@ethersproject/bytes",
+  "name": "@shapeshiftoss/ethers-bytes",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "directory": "packages/bytes",
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers.js.git"
+    "url": "git://github.com/shapeshift/ethers.js.git"
   },
   "scripts": {
     "auto-build": "npm run build -- -w",

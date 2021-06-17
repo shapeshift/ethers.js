@@ -43,7 +43,7 @@ function link(existing, path) {
         const nodeModulesBase = path_1.resolve(path_2.dirs.root, ".package_node_modules");
         // Make a symlink in the ROOT/node_mpdules to each package in this repo
         path_2.packages.forEach((name) => {
-            // e.g. /node_modules/@ethersproject/abi => /packages/abi
+            // e.g. /node_modules/@shapeshiftoss/ethers-abi => /packages/abi
             link(path_2.getPackagePath(name), path_1.resolve(path_2.dirs.root, "node_modules", name));
             // e.g. /packages/abi/node_modules => /.package_node_modules/abi/
             const nodeModules = path_1.resolve(nodeModulesBase, path_2.getDirname(name));

@@ -1,7 +1,7 @@
 "use strict";
 
-import { arrayify, Bytes, BytesLike, hexlify } from "@ethersproject/bytes";
-import { toUtf8Bytes, UnicodeNormalizationForm } from '@ethersproject/strings';
+import { arrayify, Bytes, BytesLike, hexlify } from "@shapeshiftoss/ethers-bytes";
+import { toUtf8Bytes, UnicodeNormalizationForm } from '@shapeshiftoss/ethers-strings';
 
 export function looseArrayify(hexString: string): Uint8Array {
     if (typeof(hexString) === 'string' && hexString.substring(0, 2) !== '0x') {

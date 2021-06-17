@@ -1,6 +1,6 @@
-import { Bytes, concat } from "@ethersproject/bytes";
-import { keccak256 } from "@ethersproject/keccak256";
-import { toUtf8Bytes } from "@ethersproject/strings";
+import { Bytes, concat } from "@shapeshiftoss/ethers-bytes";
+import { keccak256 } from "@shapeshiftoss/ethers-keccak256";
+import { toUtf8Bytes } from "@shapeshiftoss/ethers-strings";
 
 export const messagePrefix = "\x19Ethereum Signed Message:\n";
 

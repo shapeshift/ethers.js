@@ -2,7 +2,7 @@
 
 import assert from "assert";
 
-import { ethers } from "ethers";
+import { ethers } from "@shapeshiftoss/ethers";
 
 import contractData from "./test-contract.json";
 

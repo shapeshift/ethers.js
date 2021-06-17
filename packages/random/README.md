@@ -21,7 +21,7 @@ const {
 
     randomBytes
 
-} = require("@ethersproject/random");
+} = require("@shapeshiftoss/ethers-random");
 ```
 
 
