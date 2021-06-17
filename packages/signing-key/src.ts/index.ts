@@ -48,7 +48,7 @@ export class SigningKey {
         return "0x" + p0.pub.add(p1.pub).encodeCompressed("hex");
     }
 
-    signDigest(digest: BytesLike): Signature {
+    signDigest(digest: BytesLike): Signature | Promise<Signature> {
         const keyPair = getCurve().keyFromPrivate(arrayify(this.privateKey));
         const digestBytes = arrayify(digest);
         if (digestBytes.length !== 32) {
@@ -62,10 +62,10 @@ export class SigningKey {
         })
     }
 
-    signTx?(txData: BytesLike): Signature;
-    signMessage?(messageData: BytesLike | string): Signature;
+    signTransaction?(txData: BytesLike): Signature | Promise<Signature>;
+    signMessage?(messageData: BytesLike | string): Signature | Promise<Signature>;
 
-    computeSharedSecret(otherKey: BytesLike): string {
+    computeSharedSecret(otherKey: BytesLike): string | Promise<string> {
         const keyPair = getCurve().keyFromPrivate(arrayify(this.privateKey));
         const otherKeyPair = getCurve().keyFromPublic(arrayify(computePublicKey(otherKey)));
         return hexZeroPad("0x" + keyPair.derive(otherKeyPair.getPublic()).toString(16), 32);

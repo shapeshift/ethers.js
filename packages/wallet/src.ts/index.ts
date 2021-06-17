@@ -125,7 +125,7 @@ export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataS
 
             const sign = async (txData: string) => {
                 const signingKey = this._signingKey();
-                if (typeof signingKey.signTx === "function") return signingKey.signTx(txData);
+                if (typeof signingKey.signTransaction === "function") return signingKey.signTransaction(txData);
                 return signingKey.signDigest(keccak256(txData));
             }
             const signature = await sign(serialize(<UnsignedTransaction>tx));
@@ -154,7 +154,7 @@ export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataS
             return this.provider.resolveName(name);
         });
 
-        return joinSignature(this._signingKey().signDigest(_TypedDataEncoder.hash(populated.domain, types, populated.value)));
+        return joinSignature(await this._signingKey().signDigest(_TypedDataEncoder.hash(populated.domain, types, populated.value)));
     }
 
     encrypt(password: Bytes | string, options?: any, progressCallback?: ProgressCallback): Promise<string> {

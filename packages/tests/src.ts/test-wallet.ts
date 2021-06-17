@@ -139,7 +139,7 @@ describe('Test Transaction Signing and Parsing', function() {
 
     let tests: Array<TestCase.SignedTransaction> = loadTests('transactions');
     tests.forEach((test) => {
-        it(('parses and signs transaction - ' + test.name), function() {
+        it(('parses and signs transaction - ' + test.name), async function() {
             this.timeout(120000);
 
             let signingKey = new ethers.utils.SigningKey(test.privateKey);
@@ -159,13 +159,13 @@ describe('Test Transaction Signing and Parsing', function() {
             assert.equal(parsedTransaction.chainId, 0, 'parses chainId (legacy)');
 
             // Legacy serializes unsigned transaction
-            (function() {
+            await (async function() {
                 let unsignedTx = ethers.utils.serializeTransaction(transaction);
                 assert.equal(unsignedTx, test.unsignedTransaction,
                     'serializes unsigned transaction (legacy)');
 
                 // Legacy signed serialized transaction
-                let signature = signDigest(ethers.utils.keccak256(unsignedTx));
+                let signature = await signDigest(ethers.utils.keccak256(unsignedTx));
                 assert.equal(ethers.utils.serializeTransaction(transaction, signature), test.signedTransaction,
                     'signs transaction (legacy)');
             })();
@@ -199,14 +199,14 @@ describe('Test Transaction Signing and Parsing', function() {
 
             transaction.chainId = 5;
 
-            (function() {
+            await (async function() {
                 // EIP-155 serialized unsigned transaction
                 let unsignedTx = ethers.utils.serializeTransaction(transaction);
                 assert.equal(unsignedTx, test.unsignedTransactionChainId5,
                     'serializes unsigned transaction (eip155) ');
 
                 // EIP-155 signed serialized transaction
-                let signature = signDigest(ethers.utils.keccak256(unsignedTx));
+                let signature = await signDigest(ethers.utils.keccak256(unsignedTx));
                 assert.equal(ethers.utils.serializeTransaction(transaction, signature), test.signedTransactionChainId5,
                     'signs transaction (eip155)');
             })();
